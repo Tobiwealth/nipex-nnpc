@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('assets/fonts/NeueMontreal-Bold.otf') format('otf'),
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('assets/fonts/NeueMontreal-Medium.otf') format('otf'),
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('assets/fonts/NeueMontreal-Bold.otf') format('otf'),
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-word{
+	font-family: 'NeueMontreal', sans-serif;
+    font-weight: 700;
+}
+.card-word{
+	font-family: 'NeueMontreal', sans-serif;
+    font-weight: 500;
+}
+h1 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+
+.hero-background{
+	background: linear-gradient(318.75deg, #354F3B 8.3%, rgba(53, 79, 59, 0.501569) 55.38%, rgba(53, 79, 59, 0) 69.5%);
+}
+.hero-image-backgroud{
+	background: linear-gradient(180deg, rgba(24, 24, 24, 0) 61.6%, #000000 108.38%);
+}
+
+.hero-background2{
+	background: linear-gradient(145deg, #354F3B 8.3%, rgba(53, 79, 59, 0.501569) 55.38%, rgba(53, 79, 59, 0) 69.5%);
+}

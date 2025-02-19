@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NipeX</title>
+    <meta name="description" content="NipeX website">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #354F3B;
+		--color-cent: #FBD702;
+      }
+    </style>
+    </head>
+    <body>
+	    <nav class="bg-primary border-primary border-[1px] sticky top-0 h-20 lg:h-24 z-[999] flex justify-between items-center px-8 md:px-12 py-4">
+	        <div>
+		        <img 
+		          src="./assets/images/logo.svg"
+		          alt="logo" 
+		          class="w-[84px] h-[24.42px] md:w-[122px] md:h-[34.2px] lg:w-[172px] lg:h-[50px]"
+		        />
+	        </div>
+	        <div>
+	            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+	            	<h2 class="text-cent font-bold text-xs md:text-xl nav-word cursor-pointer">SUPPORT</h2>
+	            </a>
+	        </div>
+	    </nav>
+	    <div class="w-full bg-white flex flex-col md:flex-row gap-4 md:px-3 lg:px-8 md:py-6 ">
+	    	<div class="bg-[url('assets/images/Nipexbackground.svg')] bg-no-repeat bg-cover bg-center w-full md:w-1/2 flex-1 md:rounded-[16px]">
+				<div class="h-full bg-[url('assets/images/spheresmobile.svg')] md:bg-[url('assets/images/spheres.svg')] rounded-[16px] bg-no-repeat bg-contain bg-bottom ">
+				   <div class="hero-background rounded-[16px] h-full">
+					    <h1 class="flex flex-col md:justify-center gap-0 text-[3.2rem] lg:text-[4rem] xl:text-[5rem] leading-[80px] md:leading-[80px] lg:leading-[120px] text-white px-4 pt-12 md:pt-0 md:py-10 h-[620px] md:h-full">
+							<span>NipeX</span> 
+							<span>Management</span> 
+							<span>Information</span> 
+							<span>System</span> 
+						</h1>
+					</div>
+				</div>
+			</div>
+			<div class="w-full hidden md:block md:w-1/2 flex-1 relative rounded-[16px] bg-white overflow-hidden">
+		    	<div class="">
+				    <div class="absolute hero-image-backgroud inset-0 rounded-[16px]"></div>
+
+				    <div class="flex w-[100%] h-full transition-transform duration-700 ease-in-out" id="slider">
+				      <img src="./assets/images/hero1.svg" alt="hero picture" class="w-full h-full object-cover">
+				      <img src="./assets/images/hero2.svg" alt="hero picture" class="w-full h-full object-cover">
+				      <img src="./assets/images/hero3.svg" alt="hero picture" class="w-full h-full object-cover">
+				    </div>
+
+				    <div class="absolute bottom-8 left-10 flex gap-2">
+				      <div class="w-10 h-[5px] bg-white opacity-50 cursor-pointer indicator" data-index="0"></div>
+				      <div class="w-10 h-[5px] bg-white opacity-50 cursor-pointer indicator" data-index="1"></div>
+				      <div class="w-10 h-[5px] bg-white opacity-50 cursor-pointer indicator" data-index="2"></div>
+				    </div>
+				</div>
+	        </div>
+	    </div>
+	    <div class="flex flex-wrap justify-center gap-12 px-8 py-16 bg-[#F1F3F2] bg-[url('assets/images/cardbackground.svg')] bg-no-repeat bg-cover bg-center">
+		    <div id="card-container" class="flex flex-wrap justify-center gap-12"></div>
+		</div>
+	    <script src="script.js"></script>
+    </body>
+
+</html>
